@@ -152,7 +152,9 @@ function getCookie(key) {
  <tr>
   <td nowrap><div class ="reverse_order">
   <span class = "order2">タイトル：<input type="text" name="subject" size="25"><br class="smartphone"></span>
-  <span class = "order1"><input type="button" value="新規スレッド作成" href="./post.html"><br class="smartphone"></span></div>
+  <span class = "order1">
+	  <a href="target_page.html" class="button-style">新規スレッド作成</a>
+<br class="smartphone"></span></div>
   名前：<input type="text" name="FROM" size="19"><br class="smartphone">E-mail：<input type="text" name="mail" size="19"><br>
    <span style="margin-top:0px;">
    <div class="bbs_service_textarea"><textarea rows="5" cols="70" name="MESSAGE" placeholder="これは例なので投稿できません。"></textarea></div>
@@ -185,6 +187,15 @@ img {
 textarea {
 max-width:95%;
 margin:0;
+}
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    text-align: center;
 }
 </style>
 <script>
