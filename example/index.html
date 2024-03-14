@@ -153,7 +153,7 @@ function getCookie(key) {
   <td nowrap><div class ="reverse_order">
   <span class = "order2">タイトル：<input type="text" name="subject" size="25"><br class="smartphone"></span>
   <span class = "order1">
-	  <a href="./post.html" class="button-style">新規スレッド作成</a>
+	  <a href="./post.html" class="button-link">新規スレッド作成</a>
 <br class="smartphone"></span></div>
   名前：<input type="text" name="FROM" size="19"><br class="smartphone">E-mail：<input type="text" name="mail" size="19"><br>
    <span style="margin-top:0px;">
@@ -188,15 +188,23 @@ textarea {
 max-width:95%;
 margin:0;
 }
-.button-style {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    background-color: blue;
-    border-radius: 5px;
-    text-align: center;
-}
+        .button-link {
+            background-color: #f0f0f0; /* デフォルトのボタンの背景色に似せる */
+            border: 1px solid #d3d3d3; /* デフォルトのボタンのボーダーに似せる */
+            border-radius: 2px; /* ボタンの角を少し丸くする */
+            padding: 2px 6px; /* デフォルトのボタンのパディングに似せる */
+            text-decoration: none; /* リンクの下線を取り除く */
+            color: black; /* デフォルトのボタンのテキスト色に似せる */
+            font-family: Arial, sans-serif; /* デフォルトのフォントに似せる */
+        }
+
+        .button-link:hover {
+            background-color: #e8e8e8; /* ホバー時の背景色 */
+        }
+
+        .button-link:active {
+            background-color: #d4d4d4; /* クリック時の背景色 */
+        }
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
