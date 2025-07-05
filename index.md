@@ -8,7 +8,7 @@ image: /assets/img/default_img.gif
         <h1>EXぜろちゃんねる</h1>
         <p>ぜろちゃんねるプラスからフォークされた、使いやすさと機能性を兼ね備えた５ちゃんねる風掲示板スクリプト。
         専用ブラウザと互換性があり、投稿の閲覧や書き込みが可能です。ぜろちゃんねるプラスからも簡単に移行できます。</p>
-        <p><a class="btn btn-primary btn-lg" href="{{ "https://github.com/PrefKarafuto/ex0ch/releases/latest" | relative_url }}" role="button">Download [GitHub]</a></p>
+        <p><a class="btn btn-primary btn-lg" href="{{ "https://github.com/PrefKarafuto/ex0ch/releases/latest" | relative_url }}" role="button"><i class="fa fa-github"></i> Download v0.10.5</a></p>
     </div>
 </div>
 
@@ -31,8 +31,8 @@ image: /assets/img/default_img.gif
             <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
             <h3 class="text-center">導入方法</h3>
             <p>詳細は<a href="/docs/home">ドキュメント</a>を参照してください。</p>
-            <p><b>前提条件</b></p>
-            <p>CGIが実行可能な<code>Apache</code>サーバーと、<code>Perl 5.16</code>以上が必要です。
+            <p><b>要件</b></p>
+            <p>CGIが実行可能な<code>Apache</code>サーバーと、<code title="･Perl使いを尊重する">Perl 5.16</code>以上が前提です。
             <a href="/docs/modules">必要なモジュール</a>がサーバーにあるか確認し、なければ<code>cpan</code>等でインストールしてください。</p>
             <p><b>必要モジュール一覧</b></p>
             <p>CGI</p>
@@ -64,11 +64,10 @@ image: /assets/img/default_img.gif
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
             <h3 class="text-center">開発の歴史</h3>
-            <p><b>EXぜろちゃんねる(ex0ch)</b>は、元となる<b>ぜろちゃんねるプラス(0ch+)</b>の機能を拡充していこうというプロジェクトから出発しました。
-            ぜろちゃんねるプラスは、大元の<b>ぜろちゃんねる(0ch)</b>スクリプトからフォークされ、スレッドフロート型掲示板スクリプトとして広く普及していましたが、2013年のアップデートを最後に<b>開発の凍結が宣言</b>されており、新機能追加は望めない状態でした。
-            そのような中で、メンテナンスの継続と便利な新機能を求める声の元、<b>利用者有志</b>により「ぜろちゃんねるプラス再開発プロジェクト」が始動し、名称を<code>EXぜろちゃんねる</code>として正式にリリースするに至りました。
+            <p><b>EXぜろちゃんねる(ex0ch)</b>は、元となる<b>ぜろちゃんねるプラス(0ch+)</b>の機能を拡充していこうというプロジェクトから出発しました。命名の<b>EX</b>とは<i>extreme,extended,expanded</i>などの意味合いを含ませたもので、plusのさらに先という事で名づけました。略称ex0chはimg0chに倣った名称です。<small>(※img0chとの互換性はありません)</small></p>
+            <p>ぜろちゃんねるプラスは、大元の<b>ぜろちゃんねる(0ch)</b>スクリプトからフォークされ、スレッドフロート型の２ちゃんねる風掲示板スクリプトの代名詞としてとして広く普及していました。しかし、2013年のアップデートを最後に<b>開発の凍結</b>が宣言されており、新機能追加は望めない状態でした。
+            そのような中で、メンテナンスの継続と便利な新機能を求める声の元、<b>利用者有志</b>により「ぜろちゃんねるプラス再開発プロジェクト」が始動し、名称を<code>EXぜろちゃんねる</code>として正式にリリースするに至りました。</p>
             <p>本家ぜろちゃんねる開発者「精神衰弱 ◆kwSzvOHE」氏並びにぜろちゃんねるプラス開発者「windyakin ◆windyaking」氏を初めとする両スクリプトの開発陣の方々、そして再開発に協力して頂いた皆様に心からの謝意を表します。</p>
-            </p>
         </div>
     </div>
 </div>
