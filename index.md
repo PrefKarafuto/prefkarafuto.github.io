@@ -1,5 +1,6 @@
 ---
 layout: default
+image: /assets/img/default_img.gif
 ---
 
 <div class="header-container jumbotron">
