@@ -22,7 +22,7 @@ image: /assets/img/default_img.gif
               <p class="lead">EXぜろちゃんねるは<b>ぜろちゃんねるプラス</b>からフォークされたスクリプトですので、データの形式は殆ど同じであり、<code>ぜろちゃんねるプラスからEXぜろちゃんねるへの移行</code>は簡単です。ぜろちゃんねるプラスと同じようにアップデートし、管理画面を参照して足りないモジュールがあれば適宜追加してください。<b>確実なアップデート方法</b>は、先にEXぜろちゃんねるで掲示板を生成してからdatや各種設定ファイルを移行させるというやり方です。但し、0ch+プラグインについては、そのままでは使用できませんので注意してください。</p>
         </div>
         <div class="col-md-6 text-center">
-            <img src="{{ "/assets/img/bbs_img.png" | relative_url }}" alt="ex0ch logo" class="img-responsive" max-hight="100%">
+            <img src="{{ "/assets/img/bbs_img.png" | relative_url }}" alt="ex0ch logo" class="img-responsive">
         </div>
     </div>
     <hr>
