@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Res List レイアウト確認用</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+    form { display: flex; flex-direction: column; height: 100%; margin: 0; }
+
+    /* 固定ヘッダー・フッター */
+    .MainMenu, .MainHead, .MainFoot { flex: 0 0 auto; background: #fff; position: relative; }
+    .MainMenu { outline: 2px solid blue; }
+    .MainHead { outline: 2px solid green; }
+    .MainFoot { outline: 2px solid gray; text-align: center; }
+
+    /* メインコンテナ */
+    .Container { outline: 2px solid orange; flex: 1 1 auto; display: flex; overflow: hidden; }
+
+    /* サイドバー */
+    .FunctionList {
+      outline: 2px solid purple;
+      flex: 0 0 20%; padding: 1em; background: rgba(200,200,200,0.2); overflow: auto;
+    }
+
+    /* メインエリア */
+    .Function {
+      outline: 2px solid red;
+      flex: 1 1 80%; display: flex; flex-direction: column; overflow: hidden;
+    }
+
+    /* 内部ヘッダー・フッター */
+    .FunctionHead, .FunctionFoot {
+      flex: 0 0 auto; padding: 0.5em; background: #f9f9f9; position: relative;
+    }
+    .FunctionHead { outline: 2px dashed navy; }
+    .FunctionFoot { outline: 2px dashed maroon; }
+
+    /* 中央スクロール領域 */
+    .Main {
+      flex: 1 1 auto; overflow-y: auto; overflow-x: hidden;
+      padding: 0.5em; position: relative; outline: 2px dotted teal;
+    }
+
+    /* ラベル */
+    .MainMenu::before     { content: "MainMenu";     position: absolute; background: blue;    color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .MainHead::before     { content: "MainHead";     position: absolute; background: green;   color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .Container::before    { content: "Container";    position: absolute; background: orange;  color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .FunctionList::before { content: "FunctionList"; position: absolute; background: purple;  color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .Function::before     { content: "Function";     position: absolute; background: red;     color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .FunctionHead::before { content: "FunctionHead"; position: absolute; background: navy;   color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .Main::before         { content: "Main";         position: absolute; background: teal;    color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .FunctionFoot::before { content: "FunctionFoot"; position: absolute; background: maroon;  color: white; padding: 2px 4px; font-size:0.8em; top:0; left:0; }
+    .MainFoot::before     { content: "MainFoot";     position: absolute; background: gray;    color: white; padding: 2px 4px; font-size:0.8em; bottom:0; left:0; }
+  </style>
+</head>
+<body>
+  <form name="ADMIN" action="#" method="post">
+    <!-- ヘッダーメニュー -->
+    <div class="MainMenu" style="text-align:right;">
+      <a href="#">レス一覧</a> | <a href="#">削除レス一覧</a> | <a href="#">ログオフ</a>
+    </div>
+    <!-- サイトタイトル -->
+    <div class="MainHead" style="text-align:right;">
+      Ex0ch BBS System Manager
+    </div>
+
+    <div class="Container">
+      <!-- サイドバー -->
+      <aside class="FunctionList">
+        <nav>
+          <ul>
+            <li><a href="#">レス一覧</a></li>
+            <li><a href="#">レス一括削除</a></li>
+            <li>―――</li>
+            <li><a href="#">書き込みログ</a></li>
+            <li>―――</li>
+            <li><a href="#">掲示板管理へ戻る</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- メインコンテンツ -->
+      <main class="Function">
+        <!-- ページタイトル -->
+        <div class="FunctionHead">
+          Res List - [掲示板名]＠ex0ch掲示板 - ｈ６ｒ５６
+          <div>表示書式：<input type="text" name="DISP_FORMAT" value="l10"><input type="button" value="　表示　" onclick="DoSubmit('thread.res','DISP','LIST');"></div>
+          <hr>
+        </div>
+
+        <!-- レス一覧領域 -->
+        <div class="Main">
+          <tbody>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr><th style="width:30">　</th><td class="DetailTitle" style="width:300">Contents</td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="115"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','115');DoSubmit('thread.res','DISP','EDIT')">116</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:17:46 ID:M9e3+4Xy(主)</dt><dd> spam few <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="116"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','116');DoSubmit('thread.res','DISP','EDIT')">117</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:19:40 ID:M9e3+4Xy(主)</dt><dd> spam <br> fwgf <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="117"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','117');DoSubmit('thread.res','DISP','EDIT')">118</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:21:59 ID:M9e3+4Xy(主)</dt><dd> fwre4 <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="118"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','118');DoSubmit('thread.res','DISP','EDIT')">119</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:22:30 ID:M9e3+4Xy(主)</dt><dd> fwegfr <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="119"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','119');DoSubmit('thread.res','DISP','EDIT')">120</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:23:31 ID:M9e3+4Xy(主)</dt><dd> spam <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="120"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','120');DoSubmit('thread.res','DISP','EDIT')">121</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:23:56 ID:M9e3+4Xy(主)</dt><dd> spams <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="121"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','121');DoSubmit('thread.res','DISP','EDIT')">122</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:25:21 ID:M9e3+4Xy(主)</dt><dd> spammer <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="122"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','122');DoSubmit('thread.res','DISP','EDIT')">123</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:29:08 ID:M9e3+4Xy(主)</dt><dd> spamspma <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="123"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','123');DoSubmit('thread.res','DISP','EDIT')">124</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 01:35:02 ID:M9e3+4Xy(主)</dt><dd> spamspmar3efrd4e <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <tr><td class="Response" valign="top"><input type="checkbox" name="RESS" value="124"></td><td class="Response"><dt><a href="javascript:SetOption('SELECT_RES','124');DoSubmit('thread.res','DISP','EDIT')">125</a>：<font color="forestgreen"><b>名無しさん＠EXぜろちゃんねる</b></font>[]：2025/06/07(土) 02:14:04 ID:M9e3+4Xy(主)</dt><dd> 6juh4 <br><br><hr>HOST:test.mydomain.com<br>IP:127.0.0.1<br>UA:Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0<br>SessionID:<a href="javascript:SetOption('NINJA_ID','da300591738496508449351ea0baa7d0');DoSubmit('bbs.ninja','DISP','EDIT')">****************8449351ea0baa7d0</a></dd></td></tr>
+            <input type="hidden" name="SELECT_RES" value="">
+            <input type="hidden" name="NINJA_ID" value="">
+            <tr><td colspan="2"><hr></td></tr>
+            </tbody>
+        </div>
+
+        <!-- 操作ボタン -->
+        <div class="FunctionFoot">
+          <hr>
+          <button type="button">あぼ～ん</button>
+          <button type="button">透明あぼ～ん</button>
+        </div>
+
+        <!-- 隠しフィールド -->
+        <input type="hidden" name="SELECT_RES" value="">
+        <input type="hidden" name="NINJA_ID" value="">
+        <input type="hidden" name="TARGET_BBS" value="1749141104">
+        <input type="hidden" name="TARGET_THREAD" value="1749142298">
+        <input type="hidden" name="MODULE" value="">
+        <input type="hidden" name="MODE" value="">
+        <input type="hidden" name="MODE_SUB" value="">
+        <input type="hidden" name="UserName" value="Administrator">
+        <input type="hidden" name="SessionID" value="96fbe5205b06feab24c665dee31f00d1">
+      </main>
+    </div>
+
+    <!-- フッター -->
+    <div class="MainFoot">
+      <small>
+        Copyright 2001 - 2025 EX0ch BBS : Logging User - <b>Administrator</b><br>
+        Build Version: <b>ex0ch BBS dev-r183 20250605</b>
+      </small>
+    </div>
+  </form>
+</body>
+</html>
