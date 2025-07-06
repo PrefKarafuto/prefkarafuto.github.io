@@ -1,3 +1,16 @@
 - title: スタートガイド
   docs:
   - home
+  - system-setting
+  - bbs-setting
+  - user
+  - cap
+- title: アドバンス
+  docs:
+  - fastcgi
+  - regexp
+  - ninpocho
+  - bgdsl
+  - command
+  - plugin
+  - external-api
