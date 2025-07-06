@@ -7,10 +7,10 @@
   - cap
 - title: Advanced
   docs:
-  - fastcgi
-  - regexp
-  - ninpocho
   - bgdsl
+  - ninpocho
   - command
   - plugin
+  - regexp
+  - fastcgi
   - external-api

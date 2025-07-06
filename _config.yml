@@ -21,7 +21,8 @@
 title: EXぜろちゃんねる
 email: karafuto@na-cat.com
 description: >- # this means to ignore newlines until "baseurl:"
-  2ch/5ch風掲示板なら「EXぜろちゃんねる」
+  2ch/5ch風掲示板ならこれで決まり！「EXぜろちゃんねる」
+  強力・高機能かつ軽量の掲示板CGIスクリプト
 lang: ja-JP
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://prefkarafuto.github.io" # the base hostname & protocol for your site, e.g. http://example.com
