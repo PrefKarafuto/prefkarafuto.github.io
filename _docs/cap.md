@@ -1,4 +1,4 @@
 ---
-title: キャップの設定
+title: キャップ
 permalink: /docs/cap/
 ---

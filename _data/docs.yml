@@ -5,7 +5,7 @@
   - bbs-setting
   - user
   - cap
-- title: アドバンス
+- title: Advanced
   docs:
   - fastcgi
   - regexp
