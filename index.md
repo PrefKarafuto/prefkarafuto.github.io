@@ -19,7 +19,7 @@ image: /assets/img/default_img.gif
               <p class="lead">EXぜろちゃんねる（ex0ch）は、２ちゃんねる・５ちゃんねるライクの<a href="https://w.wiki/EeLC">スレッドフロート型掲示板</a>スクリプトです。簡単に導入でき、多彩な機能を兼ね備え、面倒な荒らし対策も強力な機能で対応できます。
               小規模なコミュニティから大規模掲示板群まで、柔軟な構築が可能です。もちろんスマートフォンからの閲覧にも対応し、5ch専用ブラウザも利用できます。
               プラグインを使った機能の拡張も可能です。</p>
-              <p class="lead">EXぜろちゃんねるは<b>ぜろちゃんねるプラス</b>からフォークされたスクリプトですので、データの形式は殆ど同じであり、<code>ぜろちゃんねるプラスからEXぜろちゃんねるへの移行</code>は簡単です。ぜろちゃんねるプラスと同じようにアップデートし、管理画面を参照して足りないモジュールがあれば適宜追加してください。<b>確実なアップデート方法</b>は、先にEXぜろちゃんねるで掲示板を生成してからdatや各種設定ファイルを移行させるというやり方です。但し、0ch+プラグインについては、そのままでは使用できませんので注意してください。</p>
+              <p class="lead">EXぜろちゃんねるは<b>ぜろちゃんねるプラス</b>からフォークされたスクリプトですので、データの形式は殆ど同じであり、<code>ぜろちゃんねるプラスからEXぜろちゃんねるへの移行</code>は簡単です。ぜろちゃんねるプラスと同じようにアップデートし、管理画面を参照して足りないモジュールがあれば適宜追加してください。<b>確実なアップデート方法</b>は、先にEXぜろちゃんねるで掲示板を生成してからdatや各種設定ファイルを移行させるというやり方です。詳しくは<a href="/docs/home">ドキュメント</a>を参照してください。</p>
         </div>
         <div class="col-md-6 text-center">
             <img src="{{ "/assets/img/bbs_img.png" | relative_url }}" alt="ex0ch logo" class="img-responsive">
@@ -30,7 +30,7 @@ image: /assets/img/default_img.gif
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
             <h3 class="text-center">導入方法</h3>
-            <p>詳細は<a href="/docs/home">ドキュメント</a>を参照してください。</p>
+            <p>詳細な手順については<a href="/docs/home">ドキュメント</a>を参照してください。</p>
             <p><b>要件</b></p>
             <p>CGIが実行可能な<code>Apache</code>サーバーと、<code title="･Perl使いを尊重する">Perl 5.16</code>以上が前提です。
             <a href="/docs/modules">必要なモジュール</a>がサーバーにあるか確認し、なければ<code>cpan</code>等でインストールしてください。</p>
@@ -50,7 +50,7 @@ image: /assets/img/default_img.gif
             <p><b>インストール</b></p>
             <p><a href="https://github.com/pref_karafuto/ex0ch">GitHub</a>から最新版をダウンロードし、解凍します。
             FTP転送ソフトを使って、解凍されたフォルダ内の<code>test</code>フォルダをアップロードします。
-            完了したら、各フォルダ・ファイルに<a href="/docs/permissions">パーミッション</a>を設定します。設定が終わったら<code>admin.cgi</code>にアクセスし、本体の設定を行なってください。</p>
+            完了したら、各フォルダ・ファイルにパーミッションを設定します。設定が終わったら<code>admin.cgi</code>にアクセスし、本体の設定を行なってください。</p>
         </div>
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
