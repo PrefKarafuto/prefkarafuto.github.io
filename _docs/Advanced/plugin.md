@@ -1,4 +1,4 @@
 ---
-title: pプラグイン
+title: プラグイン
 permalink: /docs/plugin/
 ---
