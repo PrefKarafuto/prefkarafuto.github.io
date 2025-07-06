@@ -8,8 +8,7 @@ permalink: /docs/fastcgi/
 ## サーバー側の設定（Apache）
 必要に応じて、[公式](https://httpd.apache.org/download.cgi#mod_fcgid)からFastCGIモジュールをダウンロードし、サーバーの公式ドキュメントに沿って各種設定を行ってください。
 
-- 設定例
-```apache
+```
 <Files "bbs.cgi">
 AddHandler fcgid-script .cgi
 </Files>
