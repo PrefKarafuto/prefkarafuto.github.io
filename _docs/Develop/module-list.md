@@ -53,7 +53,13 @@ wormtongue  |ng_word  |NGワード管理
 
 ## test
 | Priority apples | Second priority | Third priority |
-|-------|--------|---------|
+|:-------:|:--------:|:---------:|
 | ambrosia | gala | red delicious |
 | pink lady | jazz | macintosh |
 | honeycrisp | granny smith | fuji |
+
+| Priority apples | Second priority |
+|:-------:|:--------:||
+| ambrosia | gala |
+| pink lady | jazz |
+| honeycrisp | granny smith |
