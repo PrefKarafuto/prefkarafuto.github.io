@@ -29,7 +29,7 @@ image: /assets/img/default_img.gif
     <div class="row">
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-            <h3 class="text-center">導入方法</h3>
+            <h3 class="text-center">導入</h3>
             <p>詳細な手順については<a href="/docs/home">ドキュメント</a>を参照してください。</p>
             <p><b>要件</b></p>
             <p>CGIが実行可能な<code>Apache</code>サーバーと、<code title="･Perl使いを尊重する">Perl 5.16</code>以上が前提です。
@@ -47,7 +47,7 @@ image: /assets/img/default_img.gif
             <p>CGI::Session::ExpireSessions</p>
             <p><b>FastCGIを使う場合</b></p>
             <p>FCGI</p>
-            <p><b>インストール</b></p>
+            <p><b>インストール方法</b></p>
             <p><a href="https://github.com/pref_karafuto/ex0ch">GitHub</a>から最新版をダウンロードし、解凍します。
             FTP転送ソフトを使って、解凍されたフォルダ内の<code>test</code>フォルダをアップロードします。
             完了したら、各フォルダ・ファイルにパーミッションを設定します。設定が終わったら<code>admin.cgi</code>にアクセスし、本体の設定を行なってください。</p>
@@ -63,7 +63,7 @@ image: /assets/img/default_img.gif
         </div>
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">開発の歴史</h3>
+            <h3 class="text-center">歴史</h3>
             <p><b>EXぜろちゃんねる(ex0ch)</b>は、元となる<b>ぜろちゃんねるプラス(0ch+)</b>の機能を拡充していこうというプロジェクトから出発しました。命名の<b>EX</b>とは<i>extreme,extended,expanded</i>などの意味合いを含ませたもので、plusのさらに先という事で名づけました。略称ex0chはimg0chに倣った名称です。<small>(※img0chとの互換性はありません)</small></p>
             <p>ぜろちゃんねるプラスは、大元の<b>ぜろちゃんねる(0ch)</b>スクリプトからフォークされ、スレッドフロート型の２ちゃんねる風掲示板スクリプトの代名詞としてとして広く普及していました。しかし、2013年のアップデートを最後に<b>開発の凍結</b>が宣言されており、新機能追加は望めない状態でした。
             そのような中で、メンテナンスの継続と便利な新機能を求める声の元、<b>利用者有志</b>により「ぜろちゃんねるプラス再開発プロジェクト」が始動し、名称を<code>EXぜろちゃんねる</code>として正式にリリースするに至りました。</p>
