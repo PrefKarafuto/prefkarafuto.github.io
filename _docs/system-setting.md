@@ -84,25 +84,24 @@ Captchaで認証したとき、その結果が有効である期間です。こ�
 
 #### DNSBL設定
 規制に使用できるDNSBL(DNS Black List)を選定します。これを元にした規制を行なう場合は、掲示板設定画面で有効にする必要があります。以下のDNSBLから複数個選択可能です。
-- Dan.me.uk
-Tor出口ノード判定
-- Spamhaus
-- S5H
-- DroneBL
+- [Dan.me.uk](https://www.dan.me.uk/dnsbl)（Tor出口ノード判定）
+- [Spamhaus](https://www.spamhaus.org/)
+- [S5H](http://www.usenix.org.uk/content/rbl.html)
+- [DroneBL](https://dronebl.org/)
 
 #### 外部APIキー
-プロキシチェック用APIを使いたい場合、ここでAPIキーを登録します。これも規制する場合は掲示板設定画面で有効にする必要があります。以下のサービスが選択可能です。
-- ipdata
-- ProxyCheck.io
-- IPQS
-- IP2LOCATION.IO
-- Abstract
+プロキシチェック用APIを使いたい場合、ここでAPIキーを登録できます。規制を実施する場合は掲示板設定画面で有効にする必要があります。以下のサービスが選択可能です。
+- [ipdata](https://ipdata.co/)
+- [ProxyCheck.io](https://proxycheck.io/)
+- [IPQS](https://www.ipqualityscore.com/)
+- [IP2LOCATION.IO](https://www.ip2location.io/)
+- [Abstract](https://www.abstractapi.com/ip-lookup)
 
 #### Captcha設定
 Captchaを課したい場合、ここでサイトキーとシークレットキーを登録します。以下のCaptchaが使用可能です。
-- hCaptcha
-- reCaptcha v2
-- Turnstile
+- [hCaptcha](https://www.hcaptcha.com/)
+- [reCaptcha v2](https://developers.google.com/recaptcha/docs/display?hl=ja)
+- [Turnstile](https://www.cloudflare.com/ja-jp/application-services/products/turnstile/)
 
 #### Captchaを課すCGI
 `admin.cgi`、`search.cgi`に課すことで、過負荷やブルートフォースアタックを防ぎます。レス投稿時に課したい場合は、掲示板設定画面で有効にしてください。
