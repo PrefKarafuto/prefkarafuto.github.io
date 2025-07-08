@@ -47,6 +47,6 @@ varda       |bbs_service       |bbs.cgi支援
 wormtongue  |ng_word  |NGワード管理
 
 ## adminフォルダ（旧mordorフォルダ）
-before 	|after| 	機能
---|--|--
-sauron |	admin_cgi_base |	管理CGIのベース
+|before 	|after| 	機能|
+|---|---|---|
+|sauron |	admin_cgi_base |	管理CGIのベース|
