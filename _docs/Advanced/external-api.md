@@ -14,9 +14,10 @@ Captchaを使ってBotからの書き込みを遮断できます。システム�
 + [Turnstile](https://www.cloudflare.com/ja-jp/products/turnstile/) 
 
 #### Captchaを有効化してるのに認証しなくても書込み・ログインできる！
-+ LWP::Protocol::https  
-+ Net::SSLeay  
-は入っていますか？モジュール不足やCaptchaそれ自体の構成ミス等でチェックが失敗した場合、無条件でパスするようになっています。
++ LWP::Protocol::https
++ Net::SSLeay
+
+このCPANモジュールは入っていますか？モジュール不足やCaptchaそれ自体の構成ミス等でチェックが失敗した場合、無条件でパスするようになっています。
 
 ## プロキシチェック
 

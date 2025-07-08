@@ -10,7 +10,7 @@ redirect_from: /docs/index.html
 ```cpanm [Module]```
 のようにCPANからインストールしてください。
 
-### 必要なモジュール
+### 必要なCPANモジュール
 - Digest::MD5
 - JSON
 - HTML::Entities
