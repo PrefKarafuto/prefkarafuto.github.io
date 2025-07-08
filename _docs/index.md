@@ -7,7 +7,7 @@ redirect_from: /docs/index.html
 ## はじめる
 **EXぜろちゃんねる**を動作させるためには、suEXECでCGI動作が可能な`Apache`サーバーと、`Perl 5.16`以上が動作するUNIX系もしくはLinux系のOS、そして少なくとも**10MB**以上のディスクスペースが必要です。
 また、以下のモジュールが要求されます。もしサーバーに入っていない場合は
-```cpan install [Module]```
+```cpanm [Module]```
 のようにCPANからインストールしてください。
 
 ### 必要なモジュール
@@ -22,7 +22,7 @@ redirect_from: /docs/index.html
 - LWP::Protocol::https
 - Net::SSLeay
 
-FastCGIモードで動かすこともできます。その場合、次のモジュールが追加で必要です。
+[FastCGI](/docs/fastcgi)モードで動かすこともできます。その場合、次のモジュールが追加で必要です。
 - FCGI
 
 ## ダウンロード
